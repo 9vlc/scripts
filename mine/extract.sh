@@ -83,7 +83,6 @@ if [ 1 -gt "$map_entries" ]; then
 fi
 
 echo "Extracting $map_entries entries..."
-echo
 
 #mkdir -v output
 for current_entry in $(seq $map_entries); do
@@ -125,5 +124,4 @@ for current_entry in $(seq $map_entries); do
 	tail -c+"$((offset + 1))" "$input" | head -c"$((end_offset - offset + extra_end))" > extracted_${offset}.dat
 	# replace previous line with this if your os doesn't support -c+N in tail
 	# dd if="$1" of="extracted_${offset}.dat" skip="$((offset + 1))" bs=1 count=$((end_offset - offset + extra_end))
-	echo
 done
