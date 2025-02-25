@@ -9,7 +9,7 @@
 /*
  * WARNING: DO NOT RUN THIS ON YOUR MAIN MACHINE.
  * Compile with:
- * $ cc -o fsbench -lpthread -O2 -x fsbench.c
+ * $ cc -o fsbench -lpthread -O2 fsbench.c
  */
 
 #define MAX_THREAD_COUNT 128
