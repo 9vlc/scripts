@@ -55,8 +55,8 @@ Name=$name
 StartupWMClass=discord
 Comment=All-in-one voice and text chat for gamers that's free, secure, and works on both your desktop and phone.
 GenericName=Internet Messenger
-Exec=$1/$2
-Icon=discord
+Exec=$1/run.sh
+Icon=$1/discord.png
 Type=Application
 Categories=Network;InstantMessaging;
 DESKTOP

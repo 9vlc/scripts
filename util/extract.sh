@@ -3,7 +3,7 @@ set -e
 
 # extract-binwalk.sh
 # By ninevlc https://github.com/9vlc
-# BSD 3-Clause License
+# BSD 2-Clause License
 
 print_help() {
 	cat << EOL
