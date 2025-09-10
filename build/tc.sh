@@ -2,9 +2,13 @@
 # 9vlc
 set -eu
 
-target="mips32"
-tc_version="musl--stable-2025.08-1"
-tc_dir="$(pwd)/.toolchain"
+#
+# script for quickly using bootlin toolchains
+#
+
+target="${1:-mips32}"
+tc_version="${2:-musl--stable-2025.08-1}"
+tc_dir="${2:-}"; [ "$tc_dir" ] && tc_dir="$(pwd)/.toolchain"
 
 tc_site="https://toolchains.bootlin.com/downloads/releases/toolchains"
 tc="$tc_site/$target/tarballs/$target--$tc_version"
