@@ -14,7 +14,7 @@ tc_site="https://toolchains.bootlin.com/downloads/releases/toolchains"
 tc="$tc_site/$tc_target/tarballs/$tc_target--$tc_version"
 
 _Cln()
-{ [ -d "${_tc_tmp:-}" ] && rm -rf "$_tc_tmp"; }
+{ [ -d "${_tc_tmp:-}" ] && rm -rf "$_tc_tmp" ||:; }
 trap _Cln EXIT
 
 if [ ! -e "$tc_dir" ]; then
