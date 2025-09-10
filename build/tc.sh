@@ -49,8 +49,6 @@ if [ ! -e "$tc_dir" ]; then
 fi
 
 export PATH="$tc_dir/bin:$PATH"
-export PS1="$tc_version \w @ "
-echo "$PS1"
 unset tc_target tc_version tc_dir tc_site e_new wd tc e
 
 "$@"
