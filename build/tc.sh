@@ -8,7 +8,7 @@ set -eu
 
 tc_target="${tc_target:-mips32}"
 tc_version="${tc_version:-musl--stable-2025.08-1}"
-[ "$tc_dir" ] || tc_dir="$(pwd)/.toolchain"
+[ "${tc_dir:-}" ] || tc_dir="$(pwd)/.toolchain"
 
 tc_site="https://toolchains.bootlin.com/downloads/releases/toolchains"
 tc="$tc_site/$tc_target/tarballs/$tc_target--$tc_version"
