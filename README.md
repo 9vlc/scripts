@@ -1,3 +1,5 @@
+# moved to codeberg: https://codeberg.org/9vlc/scripts
+
 # scripts
 
 This is a collection of various scripts, code snippets, etc.
